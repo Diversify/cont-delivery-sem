@@ -7,6 +7,8 @@ class jetty {
  file {"/opt/jetty9":
     ensure => directory,
     recurse => true,
+    owner=>"ubuntu",
+    group=>"ubuntu",
  } ->
 
  exec { "download-jetty" :
@@ -21,7 +23,7 @@ class jetty {
 
  service { "jetty" :
     provider => "init", 
-    ensure => running,
+    ensure => stopped,
     start => "/opt/jetty9/bin/jetty.sh start",
     stop => "/opt/jetty9/bin/jetty.sh stop",
     status => "",
