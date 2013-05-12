@@ -2,4 +2,4 @@
 
 NODE=$1
 
-fab -H $NODE start
+fab -f build/fabfile.py -H $NODE start
