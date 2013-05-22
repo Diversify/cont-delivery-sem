@@ -18,6 +18,8 @@ public class MeetingPage {
     }
 
     public String getMeetingId() {
-        driver.findElement(By.className("meeting-id")).getText();
+        String id = driver.findElement(By.className("meeting-id")).getText();
+        System.out.println("Found meeting id " + id);
+        return id;
     }
 }

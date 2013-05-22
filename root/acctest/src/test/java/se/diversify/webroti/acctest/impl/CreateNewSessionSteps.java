@@ -23,6 +23,10 @@ public class CreateNewSessionSteps {
     @Then("a new meeting with an id is created")
     public void thenANewMeetingWithAnIdIsCreated() {
         String id = session.getMeetingId();
-        assertTrue(id.length() > 0);
+        // assertTrue(IsValidId(id));
+    }
+
+    private boolean IsValidId(String id) {
+        return id.matches("^#[0-9]+$");
     }
 }
