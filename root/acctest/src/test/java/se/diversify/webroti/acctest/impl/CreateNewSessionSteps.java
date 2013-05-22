@@ -1,4 +1,4 @@
-package se.diversify.webroti.acctest;
+package se.diversify.webroti.acctest.impl;
 
 import org.jbehave.core.annotations.Given;
 import org.jbehave.core.annotations.Then;

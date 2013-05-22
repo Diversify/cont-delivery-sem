@@ -8,6 +8,7 @@ import org.jbehave.core.reporters.Format;
 import org.jbehave.core.reporters.StoryReporterBuilder;
 import org.jbehave.core.steps.InjectableStepsFactory;
 import org.jbehave.core.steps.InstanceStepsFactory;
+import se.diversify.webroti.acctest.impl.CreateNewSessionSteps;
 
 public class CreateNewSession extends JUnitStory {
 
