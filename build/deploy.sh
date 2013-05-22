@@ -8,7 +8,7 @@ echo "Starting deploy to $NODE"
 build/stop_server.sh $NODE
 
 echo "Copying artifacts"
-SRC=webroti/target/webroti-*.war
+SRC=root/webroti/target/webroti-*.war
 DST=/opt/jetty9/webapps/webroti.war
 scp $SRC ubuntu@$NODE:$DST
 
